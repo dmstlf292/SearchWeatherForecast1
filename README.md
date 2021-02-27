@@ -1,7 +1,7 @@
 # SearchWeatherForecast1
 Search Weather and Forecast application
 
-* working on resolve problem of UI Main thread problem
+* working on resolve problem of UI Main thread
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/73155839/109382345-31b9ab80-7923-11eb-858e-af1d8f33d945.png"width="20%" height="30%">
