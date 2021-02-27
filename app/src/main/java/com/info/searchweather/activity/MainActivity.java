@@ -29,8 +29,8 @@ import okhttp3.Response;
 
 public class MainActivity extends AppCompatActivity implements SearchFragmentToActivityListener {
 
-    private final String CURRENT_WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather?q=Busan&appid=c4cd4dc6954bff34ad45980400632fb2";
-    private final String WEATHER_FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast?q=Busan&mode=json&appid=c4cd4dc6954bff34ad45980400632fb2";
+    private final String CURRENT_WEATHER_URL = "http://api.openweathermap.org/data/2.5/weather?q=Busan&appid=";
+    private final String WEATHER_FORECAST_URL = "http://api.openweathermap.org/data/2.5/forecast?q=Busan&mode=json&appid=";
 
     private SearchFragment mSearchFragment;
     private CurrentWeatherFragment mCurrentWeatherFragment;
@@ -137,8 +137,8 @@ public class MainActivity extends AppCompatActivity implements SearchFragmentToA
     public void receivedDataFromSearchFragment(String keyword) {
         showProgressDialog();
 
-        final String currentWeatherInfoUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + keyword + "&appid=c4cd4dc6954bff34ad45980400632fb2&units=metric";
-        final String forecastUrl = "http://api.openweathermap.org/data/2.5/forecast?q=" + keyword + "&mode=json&appid=c4cd4dc6954bff34ad45980400632fb2&units=metric";
+        final String currentWeatherInfoUrl = "http://api.openweathermap.org/data/2.5/weather?q=" + keyword + "&appid=&units=metric";
+        final String forecastUrl = "http://api.openweathermap.org/data/2.5/forecast?q=" + keyword + "&mode=json&appid=&units=metric";
 
         new Thread(new Runnable() {
             @Override
